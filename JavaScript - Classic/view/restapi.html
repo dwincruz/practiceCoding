@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.content {
+			box-sizing: border-box;
+			padding: 100px;
+		}
+
+		button {
+			height: 30px;
+			background-color: #373737;
+			color: white;
+		}
+
+		.section-content {
+			border: 1px solid black;
+			margin-bottom: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			display: flex;
+		}
+		form {
+			box-sizing: border-box;
+			padding: 20px;
+			width: 400px;
+			border: 1px solid grey;
+		}
+		.custom-group {
+			margin-bottom: 10px;
+		}
+		.custom-input {
+			width: 100%;
+		}
+		.custom-action {
+			display: flex;
+			justify-content: space-between;
+		}
+		.custom-result {
+			box-sizing: border-box;
+			padding: 20px;
+			width: 20%;
+			border: 1px solid grey;
+		}
+	</style>
+	<body>
+		<div class="content">
+			<div class="heading">
+				<h1>RESTful API Practice</h1>
+			</div>
+			<div class="section-content">
+				<form>
+					<div class="custom-group">
+						<label for="brand-value" class="custom-label"
+							>Brand</label
+						>
+						<input
+							type="text"
+							class="custom-input"
+							id="brand-value" />
+					</div>
+					<div class="custom-group">
+						<label for="model-value" class="custom-label"
+							>Model</label
+						>
+						<input
+							type="text"
+							class="custom-input"
+							id="model-value" />
+					</div>
+					<div class="custom-group">
+						<label for="seats-value" class="custom-label"
+							>Seats</label
+						>
+						<input
+							type="number"
+							class="custom-input"
+							id="seats-value" />
+					</div>
+					<div class="custom-group">
+						<label for="price-value" class="custom-label"
+							>Price</label
+						>
+						<input
+							type="number"
+							class="custom-input"
+							id="price-value" />
+					</div>
+					<div class="custom-group">
+						<label for="active-value" class="custom-label"
+							>Active</label
+						>
+						<input
+							type="text"
+							class="custom-input"
+							id="active-value" />
+					</div>
+
+					<div class="custom-group">
+						<button type="submit" class="">create</button>
+					</div>
+				</form>
+			</div>
+			<div class="section-content">
+				<div class="custom-result">
+					<div class="custom-group">
+						<ul class="custom-list">
+							<li>Brand</li>
+							<li>Model</li>
+							<li>Seats</li>
+							<li>Price</li>
+							<li>Active</li>
+						</ul>
+					</div>
+					<div class="custom-action">
+						<a href="#">edit</a><a href="#">remove</a>
+					</div>
+				</div>
+
+				<div class="custom-result">
+					<div class="custom-group">
+						<ul class="custom-list">
+							<li>Brand</li>
+							<li>Model</li>
+							<li>Seats</li>
+							<li>Price</li>
+							<li>Active</li>
+						</ul>
+					</div>
+					<div class="custom-action">
+						<a href="#">edit</a><a href="#">remove</a>
+					</div>
+				</div>
+
+				<div class="custom-result">
+					<div class="custom-group">
+						<ul class="custom-list">
+							<li>Brand</li>
+							<li>Model</li>
+							<li>Seats</li>
+							<li>Price</li>
+							<li>Active</li>
+						</ul>
+					</div>
+					<div class="custom-action">
+						<a href="#">edit</a><a href="#">remove</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/api.js"></script>

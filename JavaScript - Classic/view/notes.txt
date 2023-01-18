@@ -1,0 +1,63 @@
+   //username validation
+    if(userLength.value.length >= userLength.min){
+        userLength.style.borderColor = "green"
+        userMsg.innerText = "Username credentials meet"
+        userMsg.classList.remove('invalid')
+        userMsg.classList.add('valid')
+        console.log("username credentials meet")
+        
+        
+    }
+    else if(userLength.value.length === 0 || userLength.value.length < userLength.min){
+        
+        
+        userMsg.innerText = "username required"
+        
+        
+        /*
+        option 1 to design message error
+        userMsg.style.fontWeight = "bold"
+        userMsg.style.color= "red"
+        userMsg.style.fontFamily = "Arial"
+
+        passMsg.innerText = "password required"
+        passMsg.style.fontWeight = "bold"
+        passMsg.style.color= "red"
+        passMsg.style.fontFamily = "Arial"
+
+        */
+
+        /* option 2 to design message error */
+        userMsg.classList.add('invalid')
+        /* ---------------------------------------- */
+        console.log("please complete username credentials")
+    }
+
+    //password validation
+    if(passLength.value.length >= passLength.min){
+        passLength.style.borderColor = "green"
+        passMsg.innerText = "password credentials complete"
+        passMsg.classList.remove('invalid')
+        passMsg.classList.add('valid')
+        console.log("password credentials meet")
+        
+        
+    }
+    else if(passLength.value.length === 0  || passLength.value.length < passLength.min){
+        passMsg.innerText ="password required"
+        passMsg.classList.add('invalid')
+        console.log("please complete password credentials")
+    }
+    //comfirm password validation
+    if( confirmpassLength.value != passLength.value  || confirmpassLength.value.length === 0){
+        confirmpassMsg.innerText = "does not match to password"
+        confirmpassMsg.classList.add("invalid")
+        console.log("unable to match the password ")
+    }
+    else if(confirmpassLength.value === passLength.value){
+        passLength.style.borderColor = "green"
+        console.log("confirm password credentials match")
+        confirmpassMsg.innerText = "password match"
+        confirmpassMsg.classList.remove('invalid')
+        confirmpassMsg.classList.add('valid')
+    }

@@ -1,0 +1,59 @@
+html body{
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #312f2f;
+}
+div.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px -7px #504f4f;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px 0px;
+    
+}
+.valid{
+    color: rgb(68, 202, 68);
+    font-weight: bold;
+}
+
+.invalid{
+    color: rgb(196, 42, 42);
+    font-weight: bold;
+}
+.form-field{
+    padding: 10px;
+
+}
+input[type="text"].form-control, input[type="password"].form-control{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: .1px solid grey;
+    height: 30px;
+    padding: 0% 10%;
+}
+input[type="text"]:focus{
+    outline: none;
+    
+}
+input[type="submit"]{
+    background-color: #312f2f;
+    border: none;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+

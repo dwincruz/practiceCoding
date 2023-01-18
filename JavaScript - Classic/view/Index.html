@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+<div class="container">
+    
+<form action="../view/formdate.html" method="post" class="form-signup" id="form-signup">
+    <h1>Register</h1>
+    <div class="form-field">
+    <input type="text" class="form-control" id="username" name="username" pattern="[[A-Za-z0-9]{6,10}" title="requires 6-10 charaters and can accept  _- Special Characters" required placeholder="username" min="6" max="8">
+    <small id="msguser"></small>    
+    </div>
+    <div class="form-field">
+    <input type="password" class="form-control" id="password" name="pasword" pattern="[A-Za-z0-9]{6,8}" title="requires 6-8 string or number"  required placeholder="password" min="6" max="8">
+    <small id="msgpass"></small>
+    </div>
+    <div class="form-field">
+    <input type="password" class="form-control" id="confirm_password" name="pasword" pattern="[A-Za-z0-9]{6,8}" title="requires 6-8 string or number"  required placeholder="confirm password" min="6" max="8">
+    <small id="msgconfirmpass"></small>
+    </div>
+    <input type="submit" class="form-control" name="signup" id="btnSubmit" value="signup">
+    <ul class="items">
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+</form>
+</div>
+
+
+
+</body>
+
+<footer>
+
+</footer>
+</html>
+<script src="../js/main.js"></script>
